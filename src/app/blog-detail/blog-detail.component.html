@@ -1,0 +1,6 @@
+<div class="container">
+    <div *ngIf="this.blog" class="mt-2">
+        <h1>{{this.blog.title}}</h1>
+        <span [innerHTML]="this.blog.description" class="card-text"></span>
+    </div>
+</div>

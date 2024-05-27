@@ -1,0 +1,13 @@
+<section class="container">
+    <div class="d-flex flex-column gap-2">
+        <div class="card mt-2 w-100 h-100" *ngFor="let blog of blogs" style="width: 60rem;">
+            <img class="card-img-top h-50" src="../../assets/svg/blog-icon.svg" alt="Card image cap">
+            <div class="card-body blog">
+                <h5 class="card-title">{{blog.title}}</h5>
+                <span [innerHTML]="blog.description" class="card-text blog-description"></span>
+                <button class="read-more" (click)="read(blog)">Read more..</button>
+            </div>
+        </div>
+    </div>
+</section>
+

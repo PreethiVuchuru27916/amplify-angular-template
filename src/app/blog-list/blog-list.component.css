@@ -1,0 +1,11 @@
+.blog {
+    max-height: 200px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

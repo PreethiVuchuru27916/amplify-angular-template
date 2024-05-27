@@ -1,0 +1,13 @@
+.blog-title {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+::ng-deep .NgxEditor {
+    height: 600px;
+    overflow-y: scroll;
+}
+
+::ng-deep .NgxEditor__Content {
+    min-height: 400px;
+}

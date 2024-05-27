@@ -1,4 +1,10 @@
-<button (click)="createPost()">Pen the thought</button>
-<br>
-<br>
-
+<section class="container h-100">
+    <form class="mt-2 d-flex flex-column align-items-end gap-2 h-100" [formGroup]="blogForm"> 
+        <input class="blog-title form-control" formControlName="title" placeholder="Provide your Title here">    
+        <div class="form-control NgxEditor__Wrapper">
+            <ngx-editor-menu [editor]="editor"></ngx-editor-menu>
+            <ngx-editor class="text-nowrap" formControlName="description" [editor]="editor" [placeholder]="'Provide your content here'"></ngx-editor>
+        </div>
+        <button (click)="createPost()">Publish</button>
+    </form>
+</section>
